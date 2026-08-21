@@ -17,6 +17,7 @@
 }
 
 .scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   background: rgb(255 255 255 / 94%);
   box-shadow: 0 5px 18px rgb(0 0 0 / 8%);
   backdrop-filter: blur(10px);

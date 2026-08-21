@@ -315,7 +315,7 @@ const Form = ({ isOpen, onClose }: Props) => {
             </div>
 
             {/* WhatsApp Checkbox */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-start space-x-3 mt-1">
               <input
                 type="checkbox"
                 name="is_whatsapp_number"

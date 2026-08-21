@@ -164,7 +164,7 @@ const Navigation = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[10000] bg-black/50">
+    <div className="fixed inset-0 z-[10000] bg-black/60 backdrop-blur-sm">
       <div className="absolute inset-0 bg-white lg:max-w-[60vw] lg:left-[40vw]">
         {/* Close button */}
         <button

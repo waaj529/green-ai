@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ slides }) => {
     <div
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      className="relative w-full h-screen max-h-screen flex flex-col justify-between text-white transition-[background-image] duration-700 font-sans overflow-hidden select-none"
+      className="relative w-full h-screen max-h-screen flex flex-col justify-between text-white transition-[background-image] duration-1000 font-sans overflow-hidden select-none"
       style={{
         backgroundImage: `url("${slide.backgroundImage}")`,
         backgroundRepeat: "no-repeat",
