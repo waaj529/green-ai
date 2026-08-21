@@ -155,7 +155,7 @@ export default function SmartGrid() {
         </Link>
       </div>
       <D6Chatbot
-        canvasAnchored
+        canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
         triggerVariant="figmaCanvas"
         triggerClassName={styles.chatTrigger}
         triggerStyle={{

@@ -169,7 +169,7 @@ export default function WhyGreen() {
       </section>
 
       <D6Chatbot
-        canvasAnchored
+        canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
         triggerVariant="figmaCanvas"
         triggerClassName={styles.chatTrigger}
         triggerStyle={{

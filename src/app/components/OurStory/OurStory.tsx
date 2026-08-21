@@ -153,7 +153,7 @@ export default function OurStory() {
       </section>
 
       <D6Chatbot
-        canvasAnchored
+        canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
         triggerVariant="figmaCanvas"
         figmaPlaceholder="Let’s Talk Energy"
         triggerClassName={styles.chatTrigger}

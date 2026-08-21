@@ -268,7 +268,7 @@ export default function TechnologyInnovationAlliances({
       {/* Chatbot */}
       {canvas ? (
         <D6Chatbot
-          canvasAnchored
+          canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
           triggerVariant="figmaCanvas"
           triggerStyle={{
             top: 904,

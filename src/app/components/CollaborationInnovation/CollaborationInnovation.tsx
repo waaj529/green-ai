@@ -236,7 +236,7 @@ export default function CollaborationInnovation({
       {/* Chatbot */}
       {canvas ? (
         <D6Chatbot
-          canvasAnchored
+          canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
           triggerVariant="figmaCanvas"
           triggerStyle={{
             top: 899,

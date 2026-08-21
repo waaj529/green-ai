@@ -167,7 +167,7 @@ export default function OsmMonitoring() {
         </button>
       </div>
       <D6Chatbot
-        canvasAnchored
+        canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
         triggerVariant="figmaCanvas"
         triggerClassName={styles.chatTrigger}
         triggerStyle={{

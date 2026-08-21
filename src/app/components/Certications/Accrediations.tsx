@@ -193,7 +193,7 @@ export default function Accrediations() {
         <span>{certificationsData?.cta?.text || "Let’s Start"}</span>
       </button>
       <D6Chatbot
-        canvasAnchored
+        canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
         triggerVariant="figmaCanvas"
         triggerClassName={styles.chatTrigger}
         triggerStyle={{

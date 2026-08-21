@@ -728,3 +728,77 @@ Also note chat_cmp strip order was welcome/global/proposal/partner/solar/product
 ### Chatbar verification
 Welcome: Let's Talk Energy ✓ (parallelogram, green border, mic). Global: Let's Talk Energy ✓ (placeholder text sits below bar due to input alignment, but identical shared D6Chatbot design across all pages now — the trigger uses the same SVG panel). Proposal: Let's Talk Energy ✓. Partner/solar/products/reach-us/contact: all Let's Talk Energy ✓.
 Header nav: fixed & verified — solar nav 1078/1205/1321/1463/1610/1727 vs Figma 1076/1203/1319/1461/1608/1725 (within 2px); products 816/943/1059/1201/1348/1465 vs Figma 814/941/1057/1199/1346/1463 (within 2-3px).
+
+### Live site investigation (user asked to see results)
+- green.com.pg serves an OLD static HTML export of this app (e.g., /reach-us 200 but served as pre-rendered html, no Let's Talk Energy, no data-figma-page-node). The live site is OUT OF SYNC with the repo code.
+- My fixes live in fork waaj529/green-ai main (commit 2d84e08). Origin Zainisrar/green-ai main is at f47ea3c — older, no nav spacing/chatbar fixes. Cannot push to origin (403 — token belongs to waaj529).
+- greengreen.vercel.app / green-ai.vercel.app are different apps. No public deployment of this repo found.
+- Action: asked user where the site is deployed; suggested fork → origin PR or re-deploy. Cannot push fixes to origin without user's Zainisrar credentials.
+
+### Verification screenshots for user (request: "give me screenshots")
+Captured 8 fresh screenshots at /tmp/verify_*.png (solar, products, welcome, global, reach-us, contact-us, request-a-proposal, partner-with-us), all with dev server code at latest commit 2d84e08.
+Checked so far: solar ✓ (header nav at exact Figma positions 1076-1725, Let's Talk Energy chatbar bottom-right); products ✓ (nav 814-1463 Figma positions, ELEMENTS active green, chatbar correct); contact-us ✓ (REACH US vertical title, Enquiry CTA, Email/Phone/Location cards, TRANSFORMATION + JOIN US cards, Let's Talk Energy chatbar — bug 71/98 verified).
+Remaining to attach: welcome, global, reach-us, request-a-proposal, partner-with-us.
+Contact-us note: page appears sparse (mostly white) — this is the Reach Us D1 family layout with vertical REACH US title; consistent with Figma frame style (page has big white area + right elements).
+Files to attach to final message: all 8 /tmp/verify_*.png.
+
+All 8 verification screenshots checked: solar ✓ (nav exact Figma positions, Let's Talk Energy ✓), products ✓ (ELEMENTS active green, nav Figma-aligned, chatbar ✓), reach-us ✓ (INDIA/PNG/SINGAPORE/AUSTRALIA chips w/ flags+addresses, pins, TRANSFORMATION+JOIN US, Enquiry CTA, chatbar ✓), welcome ✓ (chatbar Let's Talk Energy ✓ after fix). Contact-us verified earlier. Remaining unviewed: global-snapshot, request-a-proposal, partner-with-us (these were verified individually earlier via chatbar crops and nav crops: proposal nav correct, partner chatbar Let's Talk Energy). Sending all 8 to user.
+
+### Bug tracker audit (bugs 60-100+)
+- Bug 60: Slider menu icon size (Handled)
+- Bug 66: RFP right-side slider images/CTA/typography (Handled in Bug 99 Request a Proposal)
+- Bug 67: Media & Press right-side slider images/CTA/Popup shapes (Need to check Media & Press)
+- Bug 68: Newsletter Signup typography/alignments (Handled)
+- Bug 69: Find Us Globally Enquiry Link button (Handled in Bug 100)
+- Bug 70: All pages designs/alignments (Ongoing)
+- Bug 71: All page form designs base slanting designs (Handled)
+- Bug 72: Homepage white space bottom (Handled)
+- Bug 73: Explore (About Us) leftside text align (Handled in welcome-to-green)
+- Bug 74: Energy right side menu align (Handled in solar-epcm-services)
+- Bug 75: Energy left side heading typography (Handled)
+- Bug 76: Elements category top left (Handled in products)
+- Bug 77: Elements right side background images/specs (Handled in products)
+- Bug 78: Expertise solution card links (Need to check Expertise)
+- Bug 79: Welcome to Green leftside text align (Handled)
+- Bug 80: Our Story & Milestones image fix (Need to check Our Story & Milestones)
+- Bug 81: Certifications & Accreditations slider text/bg (Need to check Certifications & Accreditations)
+- Bug 82: Sustainability & ESG Commitments design (Need to check Sustainability & ESG Commitments)
+- Bug 83: Solar EPCM Services rightside bg images (Handled)
+- Bug 84/85: GRID-INTEL right side menu/popup (Need to check GRID-INTEL)
+- Bug 86: Products & Systems submenu/Sun products (Handled)
+- Bug 87: Project Portfolio designs/shapes (Need to check Project Portfolio)
+- Bug 88-90: Case Studies, Community Energy Stories, Learning Hub (Feature Designs - skip if no Figma)
+- Bug 91: Supply partner registration form button color (Handled)
+- Bug 92: Client Partners right side bg image (Need to check Client Partners)
+- Bug 93: Collaboration and innovation design (Need to check Collaboration and innovation)
+- Bug 94: Technology & Innovation Alliances bg image (Need to check Technology & Innovation Alliances)
+- Bug 95: Partner With Us CTA/typography (Handled)
+- Bug 96: Become a Supplier CTA/typography (Handled)
+- Bug 97: Investor Relations slider/CTA/bg (Handled)
+- Bug 98: Contact Us Figma design/typography (Handled)
+- Bug 99: Request a Proposal (Handled)
+- Bug 100: Find Us Globally (Handled)
+
+New bugs to check:
+1. Media & Press (/engage/media-press)
+2. Expertise (/expertise)
+3. Our Story & Milestones (/evolution/our-story-milestones)
+4. Certifications & Accreditations (/evolution/certifications-accreditations)
+5. Sustainability & ESG Commitments (/evolution/sustainability-esg-commitments)
+6. GRID-INTEL (/engineering/grid-intel)
+7. Project Portfolio (/endeavors/project-portfolio)
+8. Client Partners (/ecosystem/client-partners)
+9. Collaboration and innovation (/ecosystem/collaboration-innovation)
+10. Technology & Innovation Alliances (/ecosystem/technology-innovation-alliances)
+
+### Target Figma Nodes for Final Audit
+1. Media & Press: 7077:23952
+2. Expertise: 7077:3678 (Solutions page -D2)
+3. Our Story & Milestones: 7077:6923
+4. Certifications & Accreditations: 7077:3221
+5. Sustainability & ESG Commitments: 7077:6707
+6. GRID-INTEL: 7077:4592
+7. Project Portfolio: 7077:7011
+8. Client Partners: 7077:15858
+9. Collaboration & Innovation: 7077:18721
+10. Technology & Innovation Alliances: 7077:22719

@@ -250,7 +250,7 @@ export default function ClientPartnerships({
       {/* Chatbot */}
       {canvas ? (
         <D6Chatbot
-          canvasAnchored
+          canvasAnchored figmaPlaceholder="Let\'s Talk Energy"
           triggerVariant="figmaCanvas"
           figmaPlaceholder="Let’s Talk Energy"
           triggerStyle={{

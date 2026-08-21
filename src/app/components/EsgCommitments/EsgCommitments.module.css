@@ -151,15 +151,16 @@
   width: 386px;
   margin: 0;
   color: #23b14d;
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
 }
 .quoteMark {
   position: absolute;
-  top: 49px;
-  left: 399px;
+  top: 80px;
+  left: 375px;
   color: #000;
   font-size: 50px;
   font-weight: 500;

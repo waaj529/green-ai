@@ -80,9 +80,21 @@ export default function MediaPress({ canvas = false }: MediaPressProps) {
       <SiteHeader layout={canvas ? "figmaCanvas" : "viewport"} />
 
       {/* Vertical side title (Raleway Black, outlined, bottom-up) */}
-      <p className={styles.verticalTitle} aria-hidden="true">
-        Media &amp; Press
-      </p>
+      <div style={{ position: 'absolute', top: '320px', left: '25px', width: '59px', height: '582px', pointerEvents: 'none', zIndex: 10 }}>
+        <svg width="59" height="582">
+          <text 
+            fill="none" 
+            stroke="rgba(0,0,0,0.1)" 
+            strokeWidth="1.3" 
+            fontFamily="Raleway" 
+            fontWeight="900" 
+            fontSize="70" 
+            transform="translate(50,580) rotate(-90)"
+          >
+            MEDIA & PRESS
+          </text>
+        </svg>
+      </div>
 
       {/* Right faint collage */}
       <div className={styles.rightCollage} aria-hidden="true">
@@ -178,6 +190,7 @@ export default function MediaPress({ canvas = false }: MediaPressProps) {
       {canvas ? (
         <D6Chatbot
           canvasAnchored
+          figmaPlaceholder="Let's Talk Energy"
           triggerVariant="figmaCanvas"
           figmaPlaceholder="Let's Talk Energy"
           triggerStyle={{
